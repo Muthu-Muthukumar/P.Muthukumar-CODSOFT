@@ -1,1 +1,4 @@
-flex lexer.lbison -d parser.y./mycompilergcc -o mycompiler lex.yy.c parser.tab.c -lfl
+flex lexer.l
+bison -d parser.y
+./mycompiler
+gcc -o mycompiler lex.yy.c parser.tab.c -lfl
